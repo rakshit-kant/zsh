@@ -79,6 +79,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    zoxide
+    sudo
+    colored-man-pages
+    web-search
     zsh-autosuggestions
     zsh-syntax-highlighting
     fzf-tab
@@ -119,9 +123,6 @@ alias ff='fastfetch'
 # terminal-wakatime setup
 export PATH="$HOME/.wakatime:$PATH"
 eval "$(terminal-wakatime init)"
-
-# zoxide setup
-eval "$(zoxide init zsh)"
 
 # cargo setup
 source "$HOME/.cargo/env"
