@@ -111,10 +111,11 @@ source $ZSH/oh-my-zsh.sh
 alias ff="fastfetch"
 alias n="ninja"
 alias c="clear"
+alias dlpkg="sudo pacman -S --needed"
 alias rmpkg="sudo pacman -Rns"
 alias cleanch="sudo pacman -Scc"
 alias fixpacman="sudo rm /var/lib/pacman/db.lck"
-alias update="yay -Syu"
+alias update="paru -Syu"
 
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
 # users are encouraged to define aliases within a top-level file in
