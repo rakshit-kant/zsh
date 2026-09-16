@@ -132,7 +132,7 @@ alias update="paru -Syu"
 
 # terminal-wakatime setup
 export PATH="$HOME/.wakatime:$PATH"
-eval "$(terminal-wakatime init)"
+eval "$(terminal-wakatime init zsh)"
 
 # cargo setup
 source "$HOME/.cargo/env"
@@ -827,6 +827,3 @@ fi
   'unset' '__fzf_completion_options'
 }
 ### end: completion.zsh ###
-
-
-. "$HOME/.local/bin/env"
