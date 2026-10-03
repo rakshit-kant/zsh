@@ -137,6 +137,9 @@ eval "$(terminal-wakatime init zsh)"
 # cargo setup
 source "$HOME/.cargo/env"
 
+# thefuck Initialization
+eval $(thefuck --alias)
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 ### key-bindings.zsh ###
@@ -827,3 +830,4 @@ fi
   'unset' '__fzf_completion_options'
 }
 ### end: completion.zsh ###
+
