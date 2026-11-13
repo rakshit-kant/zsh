@@ -134,6 +134,9 @@ alias update="paru -Syu"
 export PATH="$HOME/.wakatime:$PATH"
 eval "$(terminal-wakatime init zsh)"
 
+# Add .NET Core SDK tools
+export PATH="$PATH:/home/rakshit/.dotnet/tools"
+
 # cargo setup
 source "$HOME/.cargo/env"
 
@@ -831,3 +834,9 @@ fi
 }
 ### end: completion.zsh ###
 
+
+# terminal-wakatime setup
+eval "$(terminal-wakatime init)"
+
+# Unity CLI
+case ":${PATH}:" in *:"$HOME/.local/bin":*) ;; *) export PATH="$HOME/.local/bin:$PATH" ;; esac
